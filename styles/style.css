@@ -1,0 +1,147 @@
+/* Init */
+.init{
+    display: grid;
+    grid-template-columns: 55% 45%;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "left right";
+    background-color: #e5e5e5;
+    padding: calc(12.7rem + 8.2rem) 0 0;
+}
+
+/* Info Init */
+.info{
+    grid-area: left;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 54.8rem;
+    height: 46.5rem;
+}
+
+.info h2{
+    font-size: 4rem;
+    margin-bottom: 3.5rem;
+}
+
+.info h2 span{
+    color: green;
+}
+
+.info p{
+    margin-bottom: 3.5rem;
+    font-size: 1.8rem;
+    color: rgb(154, 154, 154);
+}
+
+.info button{
+    padding: 1.5rem 3rem;
+    width: 21.8rem;
+    border-radius: .7rem;
+    border: none;
+    background-color: green;
+    box-shadow: 0px 8px 34px rgba(40, 44, 109, 0.31);
+    font-size: 1.6rem;
+    color: white;
+    cursor: pointer;
+}
+
+.info button:hover{
+    background-color: aliceblue;
+    color: green;
+    transition: .5s;
+}
+
+/* Init Image */
+.image-wrapper{
+    grid-area: right;
+    display: flex;
+}
+
+.image-wrapper img{
+    width: 55rem;
+    height: 55rem;
+    margin: auto;
+}
+
+/* Footer */
+.end{
+    display: flex;
+    height: 43.8rem;
+    background-color: green;
+    align-items: center;
+    flex-direction: column;
+}
+
+.end .end-info{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    margin: auto;
+    width: 123.8rem;
+    height: 23.9rem;
+}
+
+/* Marketing */
+.end-info .marketing h2{
+    font-size: 2.4rem;
+    margin-top: -.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.end-info .marketing h2 span{
+    color: white;
+}
+
+.end-info .marketing p{
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+    max-width: 25rem;
+    text-align: left;
+}
+
+/* About us */
+.end-info .about h3,
+.end-info .end-contact h3,
+.end-info .end-social h3{
+    font-size: 1.7rem;
+    margin-bottom: 1.5rem;
+}
+
+.end-info .about ul li{
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+}
+
+.end-info .about ul li a{
+    color: black;
+}
+
+.end-info .end-contact p{
+    max-width: 25rem;
+}
+
+.end-info .end-social .media{
+    display: flex;
+    gap: 2rem;
+}
+
+.end-info .end-social i{
+    font-size: 2.5rem;
+    color: green;
+    background-color: white;
+    padding: 1rem;
+    clip-path: circle();
+}
+
+.end-info .end-social i:hover{
+    color: aliceblue;
+    background-color: transparent;
+    transition: .5s;
+}
+
+.end p{
+    font-size: 1.6rem;
+    padding-bottom: .8rem;
+}
